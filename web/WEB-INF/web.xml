@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+
+    <servlet>
+        <servlet-name>LogLet</servlet-name>
+        <servlet-class>com.servlet.LogLet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegLet</servlet-name>
+        <servlet-class>com.servlet.RegLet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogLet</servlet-name>
+        <url-pattern>/log.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegLet</servlet-name>
+        <url-pattern>/reg.do</url-pattern>
+    </servlet-mapping>
+
+</web-app>
