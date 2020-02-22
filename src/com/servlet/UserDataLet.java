@@ -1,17 +1,16 @@
 package com.servlet;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.SQLException;
+import com.service.Service;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
 
-import com.service.Service;
-
-public class RegLet extends HttpServlet {
+public class UserDataLet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,7 +28,6 @@ public class RegLet extends HttpServlet {
         //接受客户端信息
         request.setCharacterEncoding("UTF-8");
         String account = request.getParameter("account");
-        String nickname = request.getParameter("nickname");
         //username = new String(username.getBytes("ISO-8859-1"),"UTF-8");
         String password = request.getParameter("password");
 
@@ -37,15 +35,9 @@ public class RegLet extends HttpServlet {
         Service service = new Service();
 
         //验证处理
-        int reg = 0;
+        String reg="";
         try {
-            reg = service.register(account, nickname, password);
-            if (reg == 1) {
-                System.out.println("reg success");
-                //request.getSession().setAttribute("username", username);
-            } else {
-                System.out.println("reg fail");
-            }
+            reg = service.userData(account, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }

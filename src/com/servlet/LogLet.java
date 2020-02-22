@@ -86,7 +86,41 @@ public class LogLet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // TODO 自动生成的方法存根
+        req.setCharacterEncoding("UTF-8");
+        String account = req.getParameter("account");
+        String password = req.getParameter("password");
 
+        //新建服务对象
+        Service service = new Service();
+
+        //验证处理
+        boolean reg = false;
+        try {
+            reg = service.login(account, password);
+            if (reg) {
+                System.out.println("log success");
+                //request.getSession().setAttribute("username", username);
+            } else {
+                System.out.println("log fail");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+
+        //返回信息到客户端
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+        PrintWriter out = resp.getWriter();
+
+        if (reg) {
+            out.print("true");
+        } else {
+            out.print("false");
+        }
+
+        out.flush();
+        out.close();
     }
 
 }

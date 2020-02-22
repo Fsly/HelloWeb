@@ -9,7 +9,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="803742d0-8a75-4681-863c-042c7a2903aa" name="Default Changelist" comment="" />
+    <list default="true" id="803742d0-8a75-4681-863c-042c7a2903aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/servlet/UserDataLet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/db/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/db/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/LogLet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/LogLet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/servlet/RegLet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/servlet/RegLet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +44,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -64,6 +76,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/web" />
@@ -187,7 +200,11 @@
       <workItem from="1581588959115" duration="10253000" />
       <workItem from="1581646019360" duration="2038000" />
       <workItem from="1581758745459" duration="10593000" />
-      <workItem from="1581929448396" duration="8432000" />
+      <workItem from="1581929448396" duration="9022000" />
+      <workItem from="1582028005632" duration="6219000" />
+      <workItem from="1582114660693" duration="6744000" />
+      <workItem from="1582187510674" duration="4627000" />
+      <workItem from="1582286638494" duration="5689000" />
     </task>
     <servers />
   </component>

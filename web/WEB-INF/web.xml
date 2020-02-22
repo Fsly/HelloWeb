@@ -13,6 +13,10 @@
         <servlet-name>RegLet</servlet-name>
         <servlet-class>com.servlet.RegLet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UserDataLet</servlet-name>
+        <servlet-class>com.servlet.UserDataLet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>LogLet</servlet-name>
@@ -21,6 +25,10 @@
     <servlet-mapping>
         <servlet-name>RegLet</servlet-name>
         <url-pattern>/reg.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserDataLet</servlet-name>
+        <url-pattern>/user_data.do</url-pattern>
     </servlet-mapping>
 
 </web-app>

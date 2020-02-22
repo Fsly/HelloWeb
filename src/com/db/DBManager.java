@@ -9,8 +9,9 @@ public class DBManager {
     public static final String USER = "test";
     public static final String PASS = "123456";
     public static final String URL = "jdbc:mysql://39.97.188.42:3306/webtest" +
-            "?serverTimezone=UTC";
-//                    "&useUnicode=true" +
+            "?serverTimezone=UTC" +
+            "&useUnicode=true" +
+            "&characterEncoding=utf8";
 //                    "&useJDBCCompliantTimezoneShift=true" +
 //                    "&useLegacyDatetimeCode=false"
 
